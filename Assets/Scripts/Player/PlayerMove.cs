@@ -58,7 +58,7 @@ public class PlayerMove : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rb.linearVelocity = new Vector3(speedMov * Direction.x, rb.linearVelocity.y, speedMov * Direction.y);
+        rb.linearVelocity = new Vector3(speedMov * Direction.x,/* rb.linearVelocity.y,*/ speedMov * Direction.y);
     }
 
 

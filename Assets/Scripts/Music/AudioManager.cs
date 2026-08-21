@@ -1,0 +1,209 @@
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
+
+public class AudioManager : MonoBehaviour
+{
+    public static AudioManager Instance { get; private set; }
+
+    [SerializeField] private AudioMixerGroup musicGroup;
+    [SerializeField] private AudioMixerGroup sfxGroup;
+
+    [Header("Música (crossfade con 2 fuentes, se crean solas)")]
+    [Tooltip("Duración por defecto del crossfade al cambiar de música. 0 = corte instantáneo.")]
+    [SerializeField] private float defaultFadeDuration = 1f;
+
+    private AudioSource musicSourceA;
+    private AudioSource musicSourceB;
+    private AudioSource activeMusicSource;
+    private Coroutine crossfadeRoutine;
+
+    [SerializeField] private int poolSize = 10;
+    private Queue<AudioSource> sfxPool;
+
+    
+
+    void Awake()
+    {
+        //if (Instance != null) { Destroy(gameObject); return; }
+        Instance = this;
+        //DontDestroyOnLoad(gameObject);
+        InitPool();
+        InitMusicSources();
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void Start()
+    {
+        HandleSceneMusic();
+ 
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance == this)
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        HandleSceneMusic();
+    }
+
+    private void HandleSceneMusic()
+    {
+        LevelConfig config = FindAnyObjectByType<LevelConfig>();
+
+        if (config != null && config.ambientMusic != null)
+        {
+            PlayMusic(config.ambientMusic);
+        }
+        else
+        {
+            // No es un error: el MainMenu, por ejemplo, puede no tener LevelConfig
+            Debug.Log($"AudioManager: sin música configurada para la escena '{SceneManager.GetActiveScene().name}'.");
+        }
+
+        
+    }
+
+
+    void InitPool()
+    {
+        sfxPool = new Queue<AudioSource>();
+        for (int i = 0; i < poolSize; i++)
+        {
+            var src = gameObject.AddComponent<AudioSource>();
+            src.outputAudioMixerGroup = sfxGroup;
+            src.playOnAwake = false;
+            sfxPool.Enqueue(src);
+        }
+    }
+
+    public void PlaySFX(AudioClip clip, float volume = 1f, float pitch = 1f)
+    {
+        if (clip == null) return;
+        var src = sfxPool.Dequeue();
+        src.clip = clip;
+        src.volume = volume;
+        src.pitch = pitch;
+        src.Play();
+        sfxPool.Enqueue(src); // vuelve a la cola, se reutiliza cuando termine
+    }
+
+    // ---------------- Música (crossfade con 2 fuentes) ----------------
+
+    private void InitMusicSources()
+    {
+        musicSourceA = gameObject.AddComponent<AudioSource>();
+        musicSourceB = gameObject.AddComponent<AudioSource>();
+
+        foreach (var src in new[] { musicSourceA, musicSourceB })
+        {
+            src.outputAudioMixerGroup = musicGroup;
+            src.playOnAwake = false;
+            src.loop = true;
+            src.volume = 0f;
+        }
+
+        activeMusicSource = musicSourceA;
+    }
+
+   
+    // Reproduce música con crossfade: la fuente entrante empieza en volumen 0 y sube
+    // mientras la saliente baja, ambas al mismo tiempo (no hay silencio entre medio).
+    // Se usa tanto para la música por escena como para cambios dentro de la misma
+    // escena (ej. SuspicionMusicController al llegar al 50% de sospecha).
+    // fadeDuration = 0 -> corte instantáneo.
+    // </summary>
+    public void PlayMusic(SoundData data, float fadeDuration = -1f)
+    {
+        if (data == null)
+        {
+            Debug.LogWarning("AudioManager.PlayMusic: SoundData nulo.");
+            return;
+        }
+
+        AudioClip clip = data.GetClip();
+        if (clip == null) return;
+
+        // Ya está sonando exactamente este clip: no reiniciamos.
+        if (activeMusicSource.isPlaying && activeMusicSource.clip == clip) return;
+
+        float duration = fadeDuration >= 0f ? fadeDuration : defaultFadeDuration;
+
+        AudioSource outgoing = activeMusicSource;
+        AudioSource incoming = (activeMusicSource == musicSourceA) ? musicSourceB : musicSourceA;
+
+        incoming.clip = clip;
+        incoming.volume = duration <= 0f ? data.volume : 0f;
+        incoming.Play();
+
+        if (crossfadeRoutine != null) StopCoroutine(crossfadeRoutine);
+
+        if (duration <= 0f)
+        {
+            outgoing.Stop();
+        }
+        else
+        {
+            crossfadeRoutine = StartCoroutine(CrossfadeRoutine(outgoing, incoming, data.volume, duration));
+        }
+
+        activeMusicSource = incoming;
+    }
+
+    private IEnumerator CrossfadeRoutine(AudioSource outgoing, AudioSource incoming, float targetVolume, float duration)
+    {
+        float outgoingStartVolume = outgoing.volume;
+        float t = 0f;
+
+        while (t < duration)
+        {
+            t += Time.deltaTime;
+            float p = t / duration;
+            outgoing.volume = Mathf.Lerp(outgoingStartVolume, 0f, p);
+            incoming.volume = Mathf.Lerp(0f, targetVolume, p);
+            yield return null;
+        }
+
+        outgoing.Stop();
+        outgoing.volume = 0f;
+        incoming.volume = targetVolume;
+        crossfadeRoutine = null;
+    }
+
+    public void StopMusic(float fadeDuration = -1f)
+    {
+        float duration = fadeDuration >= 0f ? fadeDuration : defaultFadeDuration;
+
+        if (crossfadeRoutine != null) StopCoroutine(crossfadeRoutine);
+
+        if (duration <= 0f)
+        {
+            activeMusicSource.Stop();
+        }
+        else
+        {
+            crossfadeRoutine = StartCoroutine(FadeOutAndStop(activeMusicSource, duration));
+        }
+    }
+
+    private IEnumerator FadeOutAndStop(AudioSource source, float duration)
+    {
+        float startVolume = source.volume;
+        float t = 0f;
+        while (t < duration)
+        {
+            t += Time.deltaTime;
+            source.volume = Mathf.Lerp(startVolume, 0f, t / duration);
+            yield return null;
+        }
+        source.Stop();
+        source.volume = 0f;
+        crossfadeRoutine = null;
+    }
+}

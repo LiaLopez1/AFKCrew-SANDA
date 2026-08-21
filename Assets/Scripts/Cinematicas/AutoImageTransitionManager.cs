@@ -44,7 +44,7 @@ public class AutoImageTransitionManager : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("No se asignó el nombre de la siguiente escena.");
+            Debug.LogWarning("No se asignï¿½ el nombre de la siguiente escena.");
         }
     }
 

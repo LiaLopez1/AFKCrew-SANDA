@@ -8,7 +8,7 @@ public class PlayerMove : MonoBehaviour
     Controls Controls;
 
     public Vector3 Direction { get; private set; }
-    [SerializeField]private Rigidbody rb;
+    [SerializeField]private Rigidbody2D rb;
     public float speedMov;
     //private Animator animator;
 
@@ -58,7 +58,7 @@ public class PlayerMove : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rb.linearVelocity = new Vector3(speedMov * Direction.x,/* rb.linearVelocity.y,*/ speedMov * Direction.y);
+        rb.linearVelocity = new Vector2(speedMov * Direction.x,/* rb.linearVelocity.y,*/ speedMov * Direction.y);
     }
 
 

@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 24639273}
   - component: {fileID: 24639272}
   - component: {fileID: 24639274}
+  - component: {fileID: 24639275}
   m_Layer: 0
   m_Name: Vignette_Manager
   m_TagString: Untagged
@@ -180,6 +181,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CountDown
   totalTime: 30
   remainingTime: 0
+--- !u!114 &24639275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24639271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c16c77d69af22b418eb02c97142bac6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VignetteFollowPlayer
+  playerTransform: {fileID: 1599329321}
+  vignetteMaterial: {fileID: 2100000, guid: 1739f4a2ecb35564f9ae04f413ea9ae5, type: 2}
+  mainCamera: {fileID: 744868062}
 --- !u!1 &40513810
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,12 +3,11 @@ using UnityEngine;
 public class Interaction : MonoBehaviour
 {
     Controls Controls;
-    Fragment currentFragment;
+    private Interactable currentInteractable;
 
     private void Awake()
     {
         Controls = new();
-        Controls.Player.Interact.performed += ctx => TryInteract();
     }
 
     private void OnEnable()
@@ -20,33 +19,52 @@ public class Interaction : MonoBehaviour
     {
         Controls.Disable();
     }
-    private void TryInteract()
+
+   void Update()
     {
-        if (currentFragment != null)
+        if (Controls.Player.Interact.WasPressedThisFrame())
         {
-            currentFragment.CollectFragment();
-            currentFragment = null; 
+            Interact();
+        }
+    }
+    private void Interact()
+    {
+        if (currentInteractable == null) return;
+
+        currentInteractable.Interaction();
+
+        // Si el interactable se desactivó a sí mismo (ej. fragmento recogido),
+        // OnTriggerExit nunca se dispara para objetos inactivos, así que limpiamos acá.
+        if (currentInteractable is Component comp && (comp == null || !comp.gameObject.activeInHierarchy))
+        {
+            currentInteractable = null;
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.TryGetComponent<Fragment>(out Fragment fragment))
+        if (other.TryGetComponent<Interactable>(out var interactable))
         {
-            this.currentFragment = fragment;
-            Debug.Log("Presiona el bot�n para recoger el objeto.");
+            // Si ya había otro interactable en rango (colliders solapados), le ocultamos su ícono.
+            if (currentInteractable != null && (object)currentInteractable != (object)interactable)
+                currentInteractable.HidePrompt();
+
+            currentInteractable = interactable;
+            currentInteractable.ShowPrompt();
         }
     }
 
-    // Detecta cuando el jugador se aleja del objeto
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit(Collider other)
     {
-        if (collision.TryGetComponent<Fragment>(out Fragment item))
+        if (other.TryGetComponent<Interactable>(out var interactable) &&
+            (object)interactable == (object)currentInteractable)
         {
-            if (currentFragment == item)
-            {
-                currentFragment = null;
-            }       
+            currentInteractable.HidePrompt();
+            currentInteractable = null;
         }
     }
+
+
+
+
 }

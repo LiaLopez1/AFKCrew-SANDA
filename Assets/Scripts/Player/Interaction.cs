@@ -3,10 +3,12 @@ using UnityEngine;
 public class Interaction : MonoBehaviour
 {
     Controls Controls;
+    Fragment currentFragment;
 
     private void Awake()
     {
         Controls = new();
+        Controls.Player.Interact.performed += ctx => TryInteract();
     }
 
     private void OnEnable()
@@ -18,18 +20,33 @@ public class Interaction : MonoBehaviour
     {
         Controls.Disable();
     }
-
-   void Update()
+    private void TryInteract()
     {
-        if (Controls.Player.Interact.triggered)
+        if (currentFragment != null)
         {
-            Interact();
+            currentFragment.CollectFragment();
+            currentFragment = null; 
         }
     }
-    private void Interact()
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Interacted!");
+        if (collision.TryGetComponent<Fragment>(out Fragment fragment))
+        {
+            this.currentFragment = fragment;
+            Debug.Log("Presiona el botón para recoger el objeto.");
+        }
     }
 
-
+    // Detecta cuando el jugador se aleja del objeto
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.TryGetComponent<Fragment>(out Fragment item))
+        {
+            if (currentFragment == item)
+            {
+                currentFragment = null;
+            }       
+        }
+    }
 }

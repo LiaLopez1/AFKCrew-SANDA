@@ -25,25 +25,13 @@ public class ControlVignette : MonoBehaviour
             materialVignette.SetFloat(nombrePropiedad, previewIntensity);
         }
     }
-    public void IniciarCierre(float duracion)
+    public void UpdateVignette(float newValor)
     {
-        StartCoroutine(TransicionVignette(-1f, 1f, duracion));
-    }
-
-    private IEnumerator TransicionVignette(float inicio, float fin, float tiempo)
-    {
-        float transcurrido = 0f;
-        while (transcurrido < tiempo)
+       if (materialVignette != null)
         {
-            transcurrido += Time.deltaTime;
-            float progreso = transcurrido / tiempo;
-            float valorActual = Mathf.Lerp(inicio, fin, progreso);
-            previewIntensity = valorActual;
-            materialVignette.SetFloat(nombrePropiedad, valorActual);
-            yield return null;
+            previewIntensity = newValor;
+            materialVignette.SetFloat(nombrePropiedad, newValor);
         }
-        previewIntensity = fin;
-        materialVignette.SetFloat(nombrePropiedad, fin);
     }
 }
 //{

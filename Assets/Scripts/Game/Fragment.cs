@@ -8,7 +8,7 @@ public class Fragment : MonoBehaviour
     {
         Debug.Log($"Collected fragment: {fragmentName}");
         CountDown countDown =Object.FindAnyObjectByType<CountDown>();
-        countDown.remainingTime += 60f;
+        countDown.AddTimeSmooth(60f);
         Destroy(gameObject);
     }
 }

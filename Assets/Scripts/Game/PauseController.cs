@@ -20,6 +20,8 @@ public class PauseController : MonoBehaviour
     {
         isPaused = true;
         pausePanel.SetActive(true);
+        CountDown  countDown = FindAnyObjectByType<CountDown>();
+        countDown.PauseTimer(true);
         Time.timeScale = 0f; // congela el juego (movimiento, física, animaciones)
     }
 
@@ -28,6 +30,8 @@ public class PauseController : MonoBehaviour
     {
         isPaused = false;
         pausePanel.SetActive(false);
+        CountDown countDown = FindAnyObjectByType<CountDown>();
+        countDown.PauseTimer(false);
         Time.timeScale = 1f; // reanuda el juego con normalidad
     }
 }

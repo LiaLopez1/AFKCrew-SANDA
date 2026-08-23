@@ -10,7 +10,7 @@ public class PlayerMove : MonoBehaviour
     public Vector3 Direction { get; private set; }
     [SerializeField]private Rigidbody2D rb;
     public float speedMov;
-    //private Animator animator;
+    private Animator animator;
 
     //public bool isMoving = false;
     private bool facingRight = true;
@@ -18,7 +18,7 @@ public class PlayerMove : MonoBehaviour
     private void Awake()
     {
         Controls = new();
-        //animator = GetComponentInChildren<Animator>();
+        animator = GetComponentInChildren<Animator>();
         //jumpPlayer = GetComponent<JumpPlayer>();
     }
     private void OnEnable()
@@ -32,7 +32,7 @@ public class PlayerMove : MonoBehaviour
     private void Update()
     {
         Direction = Controls.Player.Move.ReadValue<Vector2>();
-        //animator.SetFloat("Speed", Mathf.Abs(Direction.x));
+        animator.SetFloat("Speed", Mathf.Abs(Direction.x) + Mathf.Abs(Direction.y));
         if ((Direction.x > 0 && !facingRight) || (Direction.x < 0 && facingRight))
         {
             Flip();

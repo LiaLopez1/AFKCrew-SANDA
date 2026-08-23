@@ -113,7 +113,7 @@ TextureImporter:
       name: Animacin-ezgif.com-gif-to-sprite-converter1_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 560
         width: 390
         height: 560
@@ -157,7 +157,7 @@ TextureImporter:
       name: Animacin-ezgif.com-gif-to-sprite-converter1_2
       rect:
         serializedVersion: 2
-        x: 780
+        x: 781
         y: 560
         width: 390
         height: 560
@@ -179,8 +179,8 @@ TextureImporter:
       name: Animacin-ezgif.com-gif-to-sprite-converter1_3
       rect:
         serializedVersion: 2
-        x: 1170
-        y: 560
+        x: 1175
+        y: 559
         width: 390
         height: 560
       alignment: 0
@@ -223,8 +223,8 @@ TextureImporter:
       name: Animacin-ezgif.com-gif-to-sprite-converter1_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 1
+        y: 3
         width: 390
         height: 560
       alignment: 0

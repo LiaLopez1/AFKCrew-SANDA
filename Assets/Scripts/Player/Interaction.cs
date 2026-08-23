@@ -41,7 +41,7 @@ public class Interaction : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.TryGetComponent<Interactable>(out var interactable))
         {
@@ -54,7 +54,7 @@ public class Interaction : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         if (other.TryGetComponent<Interactable>(out var interactable) &&
             (object)interactable == (object)currentInteractable)

@@ -1,13 +1,18 @@
-using UnityEditor;
 using UnityEngine;
 
 public class CountDown : MonoBehaviour
 {
+    public static CountDown Instance { get; private set; }
 
     [SerializeField] float totalTime;
     [SerializeField]public float remainingTime;
     
     ControlVignette vignette;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {

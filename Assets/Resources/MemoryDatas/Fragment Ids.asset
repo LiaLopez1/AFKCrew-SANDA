@@ -16,8 +16,12 @@ MonoBehaviour:
   fragmentIds:
   - Frag1
   - Frag2
-  puzzlePieceSprites:
-  - {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 21300000, guid: 09c16caa680d03b4e9120752662ed18c, type: 3}
-  finalImageSprite: {fileID: 0}
+  puzzlePieces:
+  - sprite: {fileID: 21300000, guid: 09c16caa680d03b4e9120752662ed18c, type: 3}
+    targetPosition: {x: -320, y: 1}
+    targetRotation: 0
+  - sprite: {fileID: 21300000, guid: 09c16caa680d03b4e9120752662ed18c, type: 3}
+    targetPosition: {x: 319, y: 1}
+    targetRotation: 0
+  finalImageSprite: {fileID: 21300000, guid: 09c16caa680d03b4e9120752662ed18c, type: 3}
   memorySequenceSprites: []

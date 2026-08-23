@@ -9,6 +9,8 @@ public class MemoryFragmentManager : MonoBehaviour
     public static MemoryFragmentManager Instance {get; private set;}
 
     [SerializeField] private MemoryData currentMemory;
+    public MemoryData CurrentMemory => currentMemory;
+    
     [SerializeField] private UnityEvent<int, int> onFragmentCollected; // actual / total
     [SerializeField] private UnityEvent onAllFragmentsCollected;
 

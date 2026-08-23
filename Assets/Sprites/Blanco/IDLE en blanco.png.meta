@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1300
+  spritePixelsToUnits: 820
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -114,11 +114,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 560
-        width: 390
-        height: 560
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 367
+        width: 244
+        height: 366
+      alignment: 9
+      pivot: {x: 0.497, y: 0.46}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -135,12 +135,12 @@ TextureImporter:
       name: IDLE en blanco_1
       rect:
         serializedVersion: 2
-        x: 390
-        y: 560
-        width: 390
-        height: 560
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 244
+        y: 367
+        width: 244
+        height: 366
+      alignment: 9
+      pivot: {x: 0.5, y: 0.46}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -157,12 +157,12 @@ TextureImporter:
       name: IDLE en blanco_2
       rect:
         serializedVersion: 2
-        x: 780
-        y: 560
-        width: 390
-        height: 560
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 488
+        y: 367
+        width: 244
+        height: 366
+      alignment: 9
+      pivot: {x: 0.5, y: 0.46}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -179,12 +179,12 @@ TextureImporter:
       name: IDLE en blanco_3
       rect:
         serializedVersion: 2
-        x: 1170
-        y: 560
-        width: 390
-        height: 560
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 732
+        y: 367
+        width: 244
+        height: 366
+      alignment: 9
+      pivot: {x: 0.5, y: 0.46}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -201,12 +201,12 @@ TextureImporter:
       name: IDLE en blanco_4
       rect:
         serializedVersion: 2
-        x: 1560
-        y: 560
-        width: 390
-        height: 560
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 976
+        y: 367
+        width: 244
+        height: 366
+      alignment: 9
+      pivot: {x: 0.5, y: 0.458}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -224,19 +224,19 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 390
-        height: 560
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 1
+        width: 244
+        height: 366
+      alignment: 9
+      pivot: {x: 0.5, y: 0.495}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40eec012376c2ec428d455dd44f17ed4
-      internalID: -1950758655
+      spriteID: 17da3f099a45df04ca2052ba8b68761f
+      internalID: -1438219344
       vertices: []
       indices: 
       edges: []
@@ -245,11 +245,11 @@ TextureImporter:
       name: IDLE en blanco_6
       rect:
         serializedVersion: 2
-        x: 390
-        y: 0
-        width: 390
-        height: 560
-      alignment: 0
+        x: 244
+        y: 1
+        width: 244
+        height: 366
+      alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -257,8 +257,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b948d81a073f804a90e7a57a919b8a5
-      internalID: -328973974
+      spriteID: 9e2cca342e4645b4aaf32a8cec2ffab2
+      internalID: -411280989
       vertices: []
       indices: 
       edges: []
@@ -267,20 +267,20 @@ TextureImporter:
       name: IDLE en blanco_7
       rect:
         serializedVersion: 2
-        x: 780
-        y: 0
-        width: 390
-        height: 560
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 488
+        y: 1
+        width: 244
+        height: 366
+      alignment: 9
+      pivot: {x: 0.5, y: 0.497}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a1a532f007056f478a67938df7a3efd
-      internalID: 905633763
+      spriteID: 5b0f92b0dba0db34dae715e410cdac5b
+      internalID: -130618884
       vertices: []
       indices: 
       edges: []
@@ -299,16 +299,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":2.0},"gridSpriteSize":{"x":390.0,"y":560.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":2.0},"gridSpriteSize":{"x":244.0,"y":366.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.6815534234046936,"y":0.46000000834465029},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       IDLE en blanco_0: -2127993308
       IDLE en blanco_1: -1706294877
       IDLE en blanco_2: 647977539
       IDLE en blanco_3: -1610963898
       IDLE en blanco_4: -504705653
-      IDLE en blanco_5: -1950758655
-      IDLE en blanco_6: -328973974
-      IDLE en blanco_7: 905633763
+      IDLE en blanco_5: -1438219344
+      IDLE en blanco_6: -411280989
+      IDLE en blanco_7: -130618884
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1297,7 +1297,7 @@ Transform:
   m_GameObject: {fileID: 330077564}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.43122, y: -0.10822001, z: -10}
+  m_LocalPosition: {x: -0.36677998, y: -0.38522002, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2087,7 +2087,7 @@ Transform:
   m_GameObject: {fileID: 744868058}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.43122, y: 0.21750998, z: -10}
+  m_LocalPosition: {x: 0.8657798, y: 0.21750998, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2585,7 +2585,7 @@ Transform:
   m_GameObject: {fileID: 928624339}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.276, y: 0.276, z: 0}
+  m_LocalPosition: {x: 2.159, y: 0.371, z: 0}
   m_LocalScale: {x: 0.19012497, y: 0.19012497, z: 0.19012497}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3805,8 +3805,8 @@ BoxCollider2D:
   m_Offset: {x: 0.0035798252, y: -0.13305077}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.3, y: 0.43076923}
+    pivot: {x: 0.5, y: 0.35}
+    oldSize: {x: 0.61, y: 0.64}
     newSize: {x: 0.78, y: 1.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3851,7 +3851,7 @@ Animator:
   m_GameObject: {fileID: 1599329315}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: af98439b8cca9b345ac5ed4de6a72a10, type: 2}
+  m_Controller: {fileID: 9100000, guid: e51c6f2822c74f443818d02e1ba4d00d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3945,7 +3945,7 @@ Transform:
   m_GameObject: {fileID: 1599329315}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.77, y: 0.271, z: 0}
+  m_LocalPosition: {x: -0.028, y: -0.006, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4974,8 +4974,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 1972145305}
   - {fileID: 1112586930}
-  - {fileID: 695572294}
-  - {fileID: 1599329321}
   - {fileID: 35356851}
   - {fileID: 1026372041}
   - {fileID: 817107923}
@@ -4984,3 +4982,5 @@ SceneRoots:
   - {fileID: 2041397090}
   - {fileID: 1177843177}
   - {fileID: 861187068}
+  - {fileID: 695572294}
+  - {fileID: 1599329321}

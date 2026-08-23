@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1300
+  spritePixelsToUnits: 820
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,10 +115,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 390
-        height: 560
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 248
+        height: 379
+      alignment: 9
+      pivot: {x: 0.7, y: 0.47819874}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -135,12 +135,12 @@ TextureImporter:
       name: CORRER en blanco_1
       rect:
         serializedVersion: 2
-        x: 390
+        x: 250
         y: 0
-        width: 390
-        height: 560
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 248
+        height: 379
+      alignment: 9
+      pivot: {x: 0.7, y: 0.48}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -157,12 +157,12 @@ TextureImporter:
       name: CORRER en blanco_2
       rect:
         serializedVersion: 2
-        x: 780
+        x: 501
         y: 0
-        width: 390
-        height: 560
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 248
+        height: 379
+      alignment: 9
+      pivot: {x: 0.65, y: 0.49}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -179,19 +179,19 @@ TextureImporter:
       name: CORRER en blanco_3
       rect:
         serializedVersion: 2
-        x: 1170
+        x: 775
         y: 0
-        width: 390
-        height: 560
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 248
+        height: 379
+      alignment: 9
+      pivot: {x: 0.53, y: 0.49}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6d571af5a937db42bc7c7dc9c5ca361
+      spriteID: d0e84033630254e4ea841c614e16a0de
       internalID: -1198703320
       vertices: []
       indices: 
@@ -211,7 +211,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":1.0},"gridSpriteSize":{"x":390.0,"y":560.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":1.0},"gridSpriteSize":{"x":272.0,"y":379.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       CORRER en blanco_0: 1489819366
       CORRER en blanco_1: 2093201539

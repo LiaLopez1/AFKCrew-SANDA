@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1e2ef2e9b34ee4c40b4bbb89dffc5ed4
+guid: ea735c99162ba6540b33c767f7ed1c5e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 2000
+  spritePixelsToUnits: 400
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,485 +110,485 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter_0
+      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 5128
-        width: 1224
-        height: 1282
+        y: 1026
+        width: 244
+        height: 256
       alignment: 9
-      pivot: {x: 0.5, y: 0.3733188}
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 375bb04a2cb9b134d8de57df1c33fe9c
-      internalID: -2054985683
+      spriteID: 2aa9f5ea934f1474e90d2c6c756fcd7b
+      internalID: -647705806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter_1
+      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_1
       rect:
         serializedVersion: 2
-        x: 1224
-        y: 5128
-        width: 1224
-        height: 1282
+        x: 244
+        y: 1026
+        width: 244
+        height: 256
       alignment: 9
-      pivot: {x: 0.5, y: 0.3733188}
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5114277319ad4e4581ef58f397dc00b
-      internalID: 745441622
+      spriteID: 3dea9f59e5cc42840a02f10844cc3c48
+      internalID: -1530559435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter_2
+      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_2
       rect:
         serializedVersion: 2
-        x: 2448
-        y: 5128
-        width: 1224
-        height: 1282
+        x: 488
+        y: 1026
+        width: 244
+        height: 256
       alignment: 9
-      pivot: {x: 0.5, y: 0.3733188}
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 656e2ea33297c91409f979e1f82cf471
-      internalID: 995827642
+      spriteID: 0a41f21c28de7274796e4f6c05e09cf2
+      internalID: 197573657
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter_3
+      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_3
       rect:
         serializedVersion: 2
-        x: 3672
-        y: 5128
-        width: 1224
-        height: 1282
+        x: 732
+        y: 1026
+        width: 244
+        height: 256
       alignment: 9
-      pivot: {x: 0.5, y: 0.3733188}
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14cc57137b58266479461bc4d326d6ed
-      internalID: 525038556
+      spriteID: 8dd6ee1f8d0117e4c818c550dc37e519
+      internalID: -1185456399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter_4
+      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_4
       rect:
         serializedVersion: 2
-        x: 4896
-        y: 5128
-        width: 1224
-        height: 1282
+        x: 976
+        y: 1026
+        width: 244
+        height: 256
       alignment: 9
-      pivot: {x: 0.5, y: 0.3733188}
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efcbcf0e1a4e7894e98b3ef1a872f138
-      internalID: 1259397835
+      spriteID: bb84751d717636b4692eff1f5ad91cef
+      internalID: -883689117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 3846
-        width: 1224
-        height: 1282
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3733188}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6319f72ceecd0cb4588c11890891ed91
-      internalID: -12136815
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter_6
-      rect:
-        serializedVersion: 2
-        x: 1224
-        y: 3846
-        width: 1224
-        height: 1282
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3733188}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 84c526b0bbc51d3409effd01454a54c2
-      internalID: -639840145
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter_7
-      rect:
-        serializedVersion: 2
-        x: 2448
-        y: 3846
-        width: 1224
-        height: 1282
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3733188}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce08b934e32765642a467fe2faae74b2
-      internalID: 1680061367
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter_8
-      rect:
-        serializedVersion: 2
-        x: 3672
-        y: 3846
-        width: 1224
-        height: 1282
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3733188}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03a254c9630ca714ca54d40d062a9e29
-      internalID: 2107023322
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter_9
-      rect:
-        serializedVersion: 2
-        x: 4896
-        y: 3846
-        width: 1224
-        height: 1282
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3733188}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ecb04dc1cd22b344a81ddd8ff4f9245e
-      internalID: 54130503
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter_10
+      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 2564
-        width: 1224
-        height: 1282
+        y: 770
+        width: 244
+        height: 256
       alignment: 9
-      pivot: {x: 0.5, y: 0.3733188}
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82db954db781fe14e9a7748b041fde13
-      internalID: 1150766069
+      spriteID: 6daa50816c2c032448068cdb2e374f08
+      internalID: -1344006034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter_11
+      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_6
       rect:
         serializedVersion: 2
-        x: 1224
-        y: 2564
-        width: 1224
-        height: 1282
+        x: 244
+        y: 770
+        width: 244
+        height: 256
       alignment: 9
-      pivot: {x: 0.5, y: 0.3733188}
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be4cefe0d075bad43814d73df5f1c0d7
-      internalID: 333815290
+      spriteID: 33b053caac034414585f9f746cf95ed5
+      internalID: -1832731190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter_12
+      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_7
       rect:
         serializedVersion: 2
-        x: 2448
-        y: 2564
-        width: 1224
-        height: 1282
+        x: 488
+        y: 770
+        width: 244
+        height: 256
       alignment: 9
-      pivot: {x: 0.5, y: 0.3733188}
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73143b62e40bd534298ecf2d9626a401
-      internalID: 1796122590
+      spriteID: 3db6bcacbcbb44c48a4e93c8dafa436c
+      internalID: -373635655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter_13
+      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_8
       rect:
         serializedVersion: 2
-        x: 3672
-        y: 2564
-        width: 1224
-        height: 1282
+        x: 732
+        y: 770
+        width: 244
+        height: 256
       alignment: 9
-      pivot: {x: 0.5, y: 0.3733188}
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e53347248bcced4fa9934f4b3aef350
-      internalID: 1022477873
+      spriteID: aa766e8fd97a723489debe3b52fa0f88
+      internalID: 675760778
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter_14
+      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_9
       rect:
         serializedVersion: 2
-        x: 4896
-        y: 2564
-        width: 1224
-        height: 1282
+        x: 976
+        y: 770
+        width: 244
+        height: 256
       alignment: 9
-      pivot: {x: 0.5, y: 0.3733188}
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13fa6d51da68eb6439777d71e99abf2b
-      internalID: -322434119
+      spriteID: 88170adaf394f444ea70af508e1ca81d
+      internalID: 1333959785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter_15
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1282
-        width: 1224
-        height: 1282
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3733188}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed9f05562a35ec846a28585ecdad0d53
-      internalID: 542549078
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter_16
-      rect:
-        serializedVersion: 2
-        x: 1224
-        y: 1282
-        width: 1224
-        height: 1282
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3733188}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e990569f88aef664992bab61b92d299c
-      internalID: -296781832
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter_17
-      rect:
-        serializedVersion: 2
-        x: 2448
-        y: 1282
-        width: 1224
-        height: 1282
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3733188}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 25b8ee3c5eb72634fae4794c0c89ab06
-      internalID: 1479691900
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter_18
-      rect:
-        serializedVersion: 2
-        x: 3672
-        y: 1282
-        width: 1224
-        height: 1282
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3733188}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53056903bbab8024e9b490f407895f90
-      internalID: -339039588
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter_19
-      rect:
-        serializedVersion: 2
-        x: 4896
-        y: 1282
-        width: 1224
-        height: 1282
-      alignment: 9
-      pivot: {x: 0.5, y: 0.3733188}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 005d375fcff031545abedc89817d9218
-      internalID: 1127893709
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter_20
+      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_10
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1224
-        height: 1282
+        y: 514
+        width: 244
+        height: 256
       alignment: 9
-      pivot: {x: 0.5, y: 0.3733188}
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04c19d191ca258c4eb49efb8157c7bce
-      internalID: 412297670
+      spriteID: e289869df8f6fab429d21fbbbad4336c
+      internalID: 1983938816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter_21
+      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_11
       rect:
         serializedVersion: 2
-        x: 1224
-        y: 0
-        width: 1224
-        height: 1282
+        x: 244
+        y: 514
+        width: 244
+        height: 256
       alignment: 9
-      pivot: {x: 0.5, y: 0.3733188}
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d48edca48dd70c4a99e696c52afa06e
-      internalID: 1222449472
+      spriteID: 724ea8b7f43e37140b5492e8af591913
+      internalID: -463254274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_12
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 514
+        width: 244
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe5a6cd013edd244809d249c8f1ea88
+      internalID: -1738280814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_13
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 514
+        width: 244
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af887a3b6bd6f6459c3915c14e83212
+      internalID: -1678508539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_14
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 514
+        width: 244
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af8ca831dcfbd144ac458dad7bc16e0
+      internalID: -2075888787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 258
+        width: 244
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6bd52832a9532b42b68737b339de42c
+      internalID: -699934121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_16
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 258
+        width: 244
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c1feeee70bbe9478f41ee1ba8062b3
+      internalID: 140661704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_17
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 258
+        width: 244
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af49cfc646816f42a333b2e3de1e1a1
+      internalID: 1492617772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_18
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 258
+        width: 244
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc9e804a8dc88b49b4bb674aad67b66
+      internalID: 1735190946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_19
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 258
+        width: 244
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a901505a057ab4595d9ad50ef32789
+      internalID: -2006400727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 244
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a687bd5853c364388a79d3c0aa6762
+      internalID: 2126826612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_21
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 2
+        width: 244
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb8771271310bb49be806898ae8c7c3
+      internalID: 1577505760
       vertices: []
       indices: 
       edges: []
@@ -607,30 +607,30 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":5.0},"gridSpriteSize":{"x":1224.0,"y":1282.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.37331879138946535},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":5.0},"gridSpriteSize":{"x":244.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.3499999940395355},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      EXORCISTA-2-ezgif.com-gif-to-sprite-converter_0: -2054985683
-      EXORCISTA-2-ezgif.com-gif-to-sprite-converter_1: 745441622
-      EXORCISTA-2-ezgif.com-gif-to-sprite-converter_10: 1150766069
-      EXORCISTA-2-ezgif.com-gif-to-sprite-converter_11: 333815290
-      EXORCISTA-2-ezgif.com-gif-to-sprite-converter_12: 1796122590
-      EXORCISTA-2-ezgif.com-gif-to-sprite-converter_13: 1022477873
-      EXORCISTA-2-ezgif.com-gif-to-sprite-converter_14: -322434119
-      EXORCISTA-2-ezgif.com-gif-to-sprite-converter_15: 542549078
-      EXORCISTA-2-ezgif.com-gif-to-sprite-converter_16: -296781832
-      EXORCISTA-2-ezgif.com-gif-to-sprite-converter_17: 1479691900
-      EXORCISTA-2-ezgif.com-gif-to-sprite-converter_18: -339039588
-      EXORCISTA-2-ezgif.com-gif-to-sprite-converter_19: 1127893709
-      EXORCISTA-2-ezgif.com-gif-to-sprite-converter_2: 995827642
-      EXORCISTA-2-ezgif.com-gif-to-sprite-converter_20: 412297670
-      EXORCISTA-2-ezgif.com-gif-to-sprite-converter_21: 1222449472
-      EXORCISTA-2-ezgif.com-gif-to-sprite-converter_3: 525038556
-      EXORCISTA-2-ezgif.com-gif-to-sprite-converter_4: 1259397835
-      EXORCISTA-2-ezgif.com-gif-to-sprite-converter_5: -12136815
-      EXORCISTA-2-ezgif.com-gif-to-sprite-converter_6: -639840145
-      EXORCISTA-2-ezgif.com-gif-to-sprite-converter_7: 1680061367
-      EXORCISTA-2-ezgif.com-gif-to-sprite-converter_8: 2107023322
-      EXORCISTA-2-ezgif.com-gif-to-sprite-converter_9: 54130503
+      EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_0: -647705806
+      EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_1: -1530559435
+      EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_10: 1983938816
+      EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_11: -463254274
+      EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_12: -1738280814
+      EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_13: -1678508539
+      EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_14: -2075888787
+      EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_15: -699934121
+      EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_16: 140661704
+      EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_17: 1492617772
+      EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_18: 1735190946
+      EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_19: -2006400727
+      EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_2: 197573657
+      EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_20: 2126826612
+      EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_21: 1577505760
+      EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_3: -1185456399
+      EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_4: -883689117
+      EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_5: -1344006034
+      EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_6: -1832731190
+      EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_7: -373635655
+      EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_8: 675760778
+      EXORCISTA-2-ezgif.com-gif-to-sprite-converter 1_9: 1333959785
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

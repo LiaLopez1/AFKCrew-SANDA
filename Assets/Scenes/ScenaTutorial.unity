@@ -455,7 +455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 440141c8a6b700a4998b2554ce1bc5ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CountDown
-  totalTime: 20
+  totalTime: 240
   remainingTime: 0
   speedSmooth: 1
 --- !u!114 &24639275
@@ -4368,8 +4368,8 @@ BoxCollider2D:
   m_Offset: {x: 0.0035798252, y: -0.13305077}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.3, y: 0.43076923}
+    pivot: {x: 0.7, y: 0.47819874}
+    oldSize: {x: 0.30243903, y: 0.46219513}
     newSize: {x: 0.78, y: 1.12}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4414,7 +4414,7 @@ Animator:
   m_GameObject: {fileID: 1599329315}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: af98439b8cca9b345ac5ed4de6a72a10, type: 2}
+  m_Controller: {fileID: 9100000, guid: e51c6f2822c74f443818d02e1ba4d00d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4489,7 +4489,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 4
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -1178198766, guid: f8518771b2a6cb54dab3f1278915f536, type: 3}
+  m_Sprite: {fileID: 1489819366, guid: 0fc62756427e62c4eaa463c150d13453, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5110,7 +5110,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 820cd6c59612a394bbe9e61a1bdd4af9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

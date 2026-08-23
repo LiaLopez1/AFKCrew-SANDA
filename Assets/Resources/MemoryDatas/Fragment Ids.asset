@@ -24,4 +24,7 @@ MonoBehaviour:
     targetPosition: {x: 319, y: 1}
     targetRotation: 0
   finalImageSprite: {fileID: 21300000, guid: 09c16caa680d03b4e9120752662ed18c, type: 3}
-  memorySequenceSprites: []
+  memorySequenceSprites:
+  - {fileID: 21300000, guid: 03c3448dfe664d84488655f2b28a7136, type: 3}
+  - {fileID: 21300000, guid: 8c75958b220e6c24aacd8afdf834f5ce, type: 3}
+  - {fileID: 21300000, guid: 90716da44ea2c1747a897adc3ffd82df, type: 3}

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d718bb21be7559c4dbf322f64b69cd78, type: 3}
-  m_Name: Music_Scene1
+  m_Name: BtnPressed
   m_EditorClassIdentifier: Assembly-CSharp::SoundData
   clips:
-  - {fileID: 8300000, guid: d275295faac7bda438a89b75ac0cb524, type: 3}
+  - {fileID: 8300000, guid: 4d8c5a57ab3ee1e458ded0df5b9681ed, type: 3}
   volume: 1
-  pitchVariation: 0
+  pitchVariation: -0.019

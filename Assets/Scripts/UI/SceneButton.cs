@@ -7,6 +7,8 @@ public class SceneButton : MonoBehaviour
 
     public void GoToThisScene()
     {
+        CountDown countDown = FindAnyObjectByType<CountDown>();
+        countDown.ResetTimer();
         SceneTransitionManager.Instance.TransitionToScene(targetSceneName);
     }
 }

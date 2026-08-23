@@ -1,30 +1,37 @@
 using UnityEngine;
+using UnityEngine.SceneManagement; // NUEVO: Necesario para detectar cambios de escena
 
 public class CountDown : MonoBehaviour
 {
-    public static CountDown Instance { get; private set; }
+    [SerializeField] private float totalTime = 60f;
+    [SerializeField] public float remainingTime;
 
-    [SerializeField] float totalTime;
-    [SerializeField]public float remainingTime;
-    
-    ControlVignette vignette;
+    [SerializeField] private float speedSmooth = 5f;
+    private float targetRemainingTime;
 
-    private void Awake()
-    {
-        Instance = this;
-    }
+    private ControlVignette vignette;
+
+    private bool isTimerRunning = true;
 
     private void Start()
     {
-        remainingTime = totalTime;
         vignette = Object.FindFirstObjectByType<ControlVignette>();
+        ResetTimer();
     }
 
     private void Update()
     {
-        if (remainingTime >0)
+        if (!isTimerRunning) return;
+
+        if (targetRemainingTime > 0)
         {
-            remainingTime -= Time.deltaTime;
+            targetRemainingTime -= Time.deltaTime;
+        }
+
+        remainingTime = Mathf.MoveTowards(remainingTime, targetRemainingTime, speedSmooth * Time.deltaTime);
+
+        if (remainingTime > 0)
+        {
             float progress = 1 - (remainingTime / totalTime);
             float vignetteIntensity = Mathf.Lerp(-1f, 1f, progress);
             if (vignette != null)
@@ -32,15 +39,48 @@ public class CountDown : MonoBehaviour
                 vignette.UpdateVignette(vignetteIntensity);
             }
         }
-        else if(remainingTime < 0) 
+        else
         {
-            remainingTime = 0;
-            if (vignette != null)
-            {
-                vignette.UpdateVignette(1f);
-            }
+            ExecuteGameOver();
+        }
+    }
 
-            Debug.Log("Game Over");
+    public void ResetTimer()
+    {
+        remainingTime = totalTime;
+        targetRemainingTime = totalTime;
+        isTimerRunning = true;
+
+        if (vignette != null)
+        {
+            vignette.UpdateVignette(-1f);
+        }
+    }
+
+    public void PauseTimer(bool pause)
+    {
+        isTimerRunning = !pause;
+    }
+
+    private void ExecuteGameOver()
+    {
+        remainingTime = 0;
+        targetRemainingTime = 0;
+        isTimerRunning = false;
+
+        if (vignette != null)
+        {
+            vignette.UpdateVignette(1f);
+        }
+        Debug.Log("Game Over");
+    }
+
+    public void AddTimeSmooth(float amount)
+    {
+        targetRemainingTime += amount;
+        if (targetRemainingTime > totalTime)
+        {
+            targetRemainingTime = totalTime;
         }
     }
 }

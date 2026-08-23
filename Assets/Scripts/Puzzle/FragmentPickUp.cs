@@ -5,10 +5,10 @@ public class FragmentPickUp : MonoBehaviour, Interactable
 
     [SerializeField] private string fragmentId;
     [SerializeField] private SoundData pickUpSound;
-    [SerializeField] private float timeBonus = 6f;
+    [SerializeField] private float timeBonus = 60f;
 
     [Header("Interacción")]
-
+    [Tooltip("GameObject hijo (ej. sprite/canvas con el ícono 'E') que se muestra cuando el jugador está en rango.")]
     [SerializeField] private GameObject interactionIcon;
 
     private void Awake()
@@ -29,7 +29,7 @@ public class FragmentPickUp : MonoBehaviour, Interactable
 
         if (CountDown.Instance != null)
         {
-            CountDown.Instance.remainingTime += timeBonus;
+            CountDown.Instance.AddTimeSmooth(timeBonus);
         }
 
         pickUpSound?.Play(); // usa el SoundData.Play() que ya armamos

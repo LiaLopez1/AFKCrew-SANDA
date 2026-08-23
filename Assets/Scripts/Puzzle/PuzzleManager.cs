@@ -16,7 +16,7 @@ public class PuzzleManager : MonoBehaviour
     public float PositionTolerance => positionTolerance;
     public float RotationTolerance => rotationTolerance;
 
-    [SerializeField] private float puzzleTimeScale = 0.1f;
+    [SerializeField] private float puzzleTimeScale = 0f;
     [SerializeField] private UnityEvent onPuzzleCompleted;
 
     [Header("Secuencia del recuerdo")]
@@ -51,6 +51,9 @@ public class PuzzleManager : MonoBehaviour
 
         puzzleRoot.SetActive(true);
         Time.timeScale = puzzleTimeScale;
+        CountDown  countDown = FindAnyObjectByType<CountDown>();
+        countDown.PauseTimer(true);
+        
 
         foreach (var pieceData in memory.PuzzlePieces)
         {

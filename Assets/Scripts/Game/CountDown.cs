@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement; // NUEVO: Necesario para detectar cambios de 
 
 public class CountDown : MonoBehaviour
 {
+    public static CountDown Instance {get; private set;}
     [SerializeField] private float totalTime = 60f;
     [SerializeField] public float remainingTime;
 
@@ -12,6 +13,18 @@ public class CountDown : MonoBehaviour
     private ControlVignette vignette;
 
     private bool isTimerRunning = true;
+
+        private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        //DontDestroyOnLoad(gameObject);
+    }
 
     private void Start()
     {

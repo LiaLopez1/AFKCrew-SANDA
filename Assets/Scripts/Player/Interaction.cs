@@ -4,10 +4,12 @@ public class Interaction : MonoBehaviour
 {
     Controls Controls;
     private Interactable currentInteractable;
+    Animator animator;
 
     private void Awake()
     {
         Controls = new();
+        animator = GetComponentInChildren<Animator>();
     }
 
     private void OnEnable()
@@ -30,7 +32,7 @@ public class Interaction : MonoBehaviour
     private void Interact()
     {
         if (currentInteractable == null) return;
-
+        animator.SetTrigger("Interact");
         currentInteractable.Interaction();
 
         // Si el interactable se desactivó a sí mismo (ej. fragmento recogido),

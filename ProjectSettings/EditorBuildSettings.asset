@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/3.-Credits.unity
     guid: 9ae5bfb1ceb3615438dc19890e75db0d
   - enabled: 1
-    path: Assets/Scenes/Scena1.unity
+    path: Assets/Scenes/ScenaTutorial.unity
     guid: 9694c63ed7e826844a077cd83db63d9f
   - enabled: 1
     path: Assets/Scenes/Kuro_Player.unity

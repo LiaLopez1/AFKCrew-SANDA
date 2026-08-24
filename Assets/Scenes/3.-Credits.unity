@@ -809,7 +809,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1138503055
 RectTransform:
   m_ObjectHideFlags: 0
@@ -988,11 +988,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Nothingxd
-
-    Conipato
-
-    Onlyjabs'
+  m_text: "Giulianna Nu\xF1ez\nDaniela Torres\nJoseph Arquinigo"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1871b0c268f605e4c8ba131acfa5b79c, type: 2}
   m_sharedMaterial: {fileID: -3083703353615891696, guid: 1871b0c268f605e4c8ba131acfa5b79c, type: 2}
@@ -1226,7 +1222,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1528410938
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1446,7 +1442,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1579962250
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1849,7 +1845,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1679787412
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2166,9 +2162,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lia_Lopez
+  m_text: 'Lia Lopez
 
-    Kuroshiro94'
+    Francisco Vinelli Chambi'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1871b0c268f605e4c8ba131acfa5b79c, type: 2}
   m_sharedMaterial: {fileID: -3083703353615891696, guid: 1871b0c268f605e4c8ba131acfa5b79c, type: 2}

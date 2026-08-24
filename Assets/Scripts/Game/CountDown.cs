@@ -86,6 +86,7 @@ public class CountDown : MonoBehaviour
             vignette.UpdateVignette(1f);
         }
         Debug.Log("Game Over");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void AddTimeSmooth(float amount)

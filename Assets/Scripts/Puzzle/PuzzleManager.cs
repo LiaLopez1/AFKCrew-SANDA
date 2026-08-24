@@ -6,11 +6,16 @@ public class PuzzleManager : MonoBehaviour
 {
     public static PuzzleManager Instance { get; private set; }
 
+    [Header("Configuración de Tutorial")]
+    [SerializeField] private bool isTutorial = false; // <-- NUEVO BOOL
+
+    [Header("Referencias de UI")]
     [SerializeField] private GameObject puzzleRoot;
     [SerializeField] private RectTransform piecesContainer;
     [SerializeField] private PuzzlePiece piecePrefab;
     [SerializeField] private UnityEngine.UI.Image finalImageDisplay;
 
+    [Header("Tolerancias")]
     [SerializeField] private float positionTolerance = 30f;
     [SerializeField] private float rotationTolerance = 15f;
     public float PositionTolerance => positionTolerance;
@@ -46,14 +51,28 @@ public class PuzzleManager : MonoBehaviour
             return;
         }
 
+        // --- MODO TUTORIAL ---
+        if (isTutorial)
+        {
+            if (puzzleRoot != null) puzzleRoot.SetActive(true);
+            if (piecesContainer != null) piecesContainer.gameObject.SetActive(false);
+            if (finalImageDisplay != null) finalImageDisplay.gameObject.SetActive(false);
+
+            // Activamos directamente el botón de continuar saltando todo lo demás
+            if (continueButton != null) continueButton.SetActive(true);
+            onPuzzleCompleted?.Invoke();
+            return;
+        }
+
+        // --- MODO NORMAL (ROMPECABEZAS) ---
         placedPieces = 0;
         totalPieces = memory.PuzzlePieces.Count;
 
         puzzleRoot.SetActive(true);
         Time.timeScale = puzzleTimeScale;
-        CountDown  countDown = FindAnyObjectByType<CountDown>();
-        countDown.PauseTimer(true);
-        
+
+        CountDown countDown = FindAnyObjectByType<CountDown>();
+        if (countDown != null) countDown.PauseTimer(true);
 
         foreach (var pieceData in memory.PuzzlePieces)
         {

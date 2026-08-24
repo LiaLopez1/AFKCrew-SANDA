@@ -6,48 +6,59 @@ public class Interaction : MonoBehaviour
     private Interactable currentInteractable;
     Animator animator;
 
+    // NUEVO: Referencia directa a tu script de movimiento
+    private PlayerMove playerMove;
+
     private void Awake()
     {
         Controls = new();
         animator = GetComponentInChildren<Animator>();
+
+        // Obtiene el componente de movimiento
+        playerMove = GetComponent<PlayerMove>();
     }
 
-    private void OnEnable()
-    {
-        Controls.Enable();
-    }
+    private void OnEnable() => Controls.Enable();
+    private void OnDisable() => Controls.Disable();
 
-    private void OnDisable()
+    void Update()
     {
-        Controls.Disable();
-    }
+        // Bloqueamos la entrada del botón de interactuar si el jugador ya está interactuando
+        if (playerMove != null && !playerMove.CanMove) return;
 
-   void Update()
-    {
         if (Controls.Player.Interact.WasPressedThisFrame())
         {
             Interact();
         }
     }
+
     private void Interact()
     {
         if (currentInteractable == null) return;
+
+        // 1. BLOQUEAR MOVIMIENTO
+        if (playerMove != null) playerMove.CanMove = false;
+
         animator.SetTrigger("Interact");
         currentInteractable.Interaction();
 
-        // Si el interactable se desactivó a sí mismo (ej. fragmento recogido),
-        // OnTriggerExit nunca se dispara para objetos inactivos, así que limpiamos acá.
         if (currentInteractable is Component comp && (comp == null || !comp.gameObject.activeInHierarchy))
         {
             currentInteractable = null;
         }
     }
 
+    // 2. FUNCIÓN PARA EL ANIMATION EVENT
+    // Recuerda colocar este evento al final de tu animación "Interact" en Unity
+    public void EndInteractionAnimation()
+    {
+        if (playerMove != null) playerMove.CanMove = true;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.TryGetComponent<Interactable>(out var interactable))
         {
-            // Si ya había otro interactable en rango (colliders solapados), le ocultamos su ícono.
             if (currentInteractable != null && (object)currentInteractable != (object)interactable)
                 currentInteractable.HidePrompt();
 
@@ -65,8 +76,4 @@ public class Interaction : MonoBehaviour
             currentInteractable = null;
         }
     }
-
-
-
-
 }

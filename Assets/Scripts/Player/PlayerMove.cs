@@ -8,25 +8,24 @@ public class PlayerMove : MonoBehaviour
     Controls Controls;
 
     public Vector3 Direction { get; private set; }
-    [SerializeField]private Rigidbody2D rb;
+    [SerializeField] private Rigidbody2D rb;
     public float speedMov;
     private Animator animator;
 
     private bool facingRight = true;
+
+    // NUEVO: Propiedad para activar/desactivar el movimiento desde fuera
+    public bool CanMove { get; set; } = true;
+
     private void Awake()
     {
         Controls = new();
         animator = GetComponentInChildren<Animator>();
-        //jumpPlayer = GetComponent<JumpPlayer>();
     }
-    private void OnEnable()
-    {
-        Controls.Enable();
-    }
-    private void OnDisable()
-    {
-        Controls.Disable();
-    }
+
+    private void OnEnable() => Controls.Enable();
+    private void OnDisable() => Controls.Disable();
+
     private void Update()
     {
         if (Time.timeScale == 0f)
@@ -34,42 +33,35 @@ public class PlayerMove : MonoBehaviour
             Direction = Vector3.zero;
             return;
         }
+
+        // MODIFICADO: Si no puede moverse, forzamos la dirección a cero y apagamos la animación
+        if (!CanMove)
+        {
+            Direction = Vector3.zero;
+            animator.SetFloat("Speed", 0f);
+            return;
+        }
+
         Direction = Controls.Player.Move.ReadValue<Vector2>();
         animator.SetFloat("Speed", Mathf.Abs(Direction.x) + Mathf.Abs(Direction.y));
+
         if ((Direction.x > 0 && !facingRight) || (Direction.x < 0 && facingRight))
         {
             Flip();
         }
-        //if (Mathf.Abs(Direction.x) > 0.1f && jumpPlayer.IsGrounded)
-        //{
-        //    if (!isMoving)
-        //    {
-        //        isMoving = true;
-        //        PlayWalkSound();
-        //    }
-
-        //}
-        //else
-        //{
-        //    if (isMoving)
-        //    {
-        //        isMoving = false;
-        //        StopWalkSound();
-        //    }
-
-        //}
     }
+
     private void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(speedMov * Direction.x,/* rb.linearVelocity.y,*/ speedMov * Direction.y);
+        // Al poner Direction en cero arriba, el Rigidbody se detendrá instantáneamente aquí
+        rb.linearVelocity = new Vector2(speedMov * Direction.x, speedMov * Direction.y);
     }
-
 
     private void Flip()
     {
-        facingRight = !facingRight; // Cambia el estado de dirección
-        Vector3 localScale = transform.localScale; // Obtiene la escala actual
-        localScale.x *= -1; // Invierte el eje X
-        transform.localScale = localScale; // Aplica la nueva escala
+        facingRight = !facingRight;
+        Vector3 localScale = transform.localScale;
+        localScale.x *= -1;
+        transform.localScale = localScale;
     }
 }

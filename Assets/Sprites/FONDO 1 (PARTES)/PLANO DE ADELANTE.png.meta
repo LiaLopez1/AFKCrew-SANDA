@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 700
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -154,50 +154,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PLANO DE ADELANTE_2
-      rect:
-        serializedVersion: 2
-        x: 2474
-        y: 300
-        width: 368
-        height: 616
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae678ad3877d4994aba678d2d4fe3047
-      internalID: -1646977275
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PLANO DE ADELANTE_3
-      rect:
-        serializedVersion: 2
-        x: 2879
-        y: 300
-        width: 365
-        height: 616
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b4f8e3312d33c6c44802e873de532e17
-      internalID: 1689999028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: PLANO DE ADELANTE_4
       rect:
         serializedVersion: 2
@@ -241,6 +197,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: PLANO DE ADELANTE_6
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 300
+        width: 1178
+        height: 619
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e403f0bbcb73694cb3609fbb7662ff1
+      internalID: 1907525129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -263,6 +241,7 @@ TextureImporter:
       PLANO DE ADELANTE_3: 1689999028
       PLANO DE ADELANTE_4: -1985343786
       PLANO DE ADELANTE_5: 2023458224
+      PLANO DE ADELANTE_6: 1907525129
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

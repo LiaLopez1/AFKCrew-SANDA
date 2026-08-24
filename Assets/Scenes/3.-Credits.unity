@@ -853,8 +853,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1871b0c268f605e4c8ba131acfa5b79c, type: 2}
+  m_sharedMaterial: {fileID: -3083703353615891696, guid: 1871b0c268f605e4c8ba131acfa5b79c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -994,8 +994,8 @@ MonoBehaviour:
 
     Onlyjabs'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1871b0c268f605e4c8ba131acfa5b79c, type: 2}
+  m_sharedMaterial: {fileID: -3083703353615891696, guid: 1871b0c268f605e4c8ba131acfa5b79c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1131,8 +1131,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Game Programmers
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1871b0c268f605e4c8ba131acfa5b79c, type: 2}
+  m_sharedMaterial: {fileID: -3083703353615891696, guid: 1871b0c268f605e4c8ba131acfa5b79c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1272,8 +1272,8 @@ MonoBehaviour:
 
     la musica'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1871b0c268f605e4c8ba131acfa5b79c, type: 2}
+  m_sharedMaterial: {fileID: -3083703353615891696, guid: 1871b0c268f605e4c8ba131acfa5b79c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1490,8 +1490,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1871b0c268f605e4c8ba131acfa5b79c, type: 2}
+  m_sharedMaterial: {fileID: -3083703353615891696, guid: 1871b0c268f605e4c8ba131acfa5b79c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1754,8 +1754,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Artist 2D
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1871b0c268f605e4c8ba131acfa5b79c, type: 2}
+  m_sharedMaterial: {fileID: -3083703353615891696, guid: 1871b0c268f605e4c8ba131acfa5b79c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1892,8 +1892,8 @@ MonoBehaviour:
   m_text: Aqui van los assets que usemos como por ejemplo si se saco de internte
     etc (SFX no Nuestros)
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1871b0c268f605e4c8ba131acfa5b79c, type: 2}
+  m_sharedMaterial: {fileID: -3083703353615891696, guid: 1871b0c268f605e4c8ba131acfa5b79c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2031,8 +2031,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a62b079a77cdc714491779a503c48f04, type: 2}
+  m_sharedMaterial: {fileID: -1923665289249478701, guid: a62b079a77cdc714491779a503c48f04, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2170,8 +2170,8 @@ MonoBehaviour:
 
     Kuroshiro94'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1871b0c268f605e4c8ba131acfa5b79c, type: 2}
+  m_sharedMaterial: {fileID: -3083703353615891696, guid: 1871b0c268f605e4c8ba131acfa5b79c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -18,8 +18,11 @@ EditorBuildSettings:
     path: Assets/Scenes/ScenaTutorial.unity
     guid: 9694c63ed7e826844a077cd83db63d9f
   - enabled: 1
-    path: Assets/Scenes/Kuro_Player.unity
-    guid: 7621057565d17aa4d9357645d64d4d64
+    path: Assets/Scenes/Gameplay 2.unity
+    guid: 507e6bf94c37f8f47b4f59adcdc357bb
+  - enabled: 0
+    path: Assets/Scenes/Scena Con Todo.unity
+    guid: 3434818c6d5e453449c5f33ae86ee925
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
